@@ -63,7 +63,7 @@ __What does a compiler do?__
 
 <div class="incremental" markdown="block">
 
-It translates a high-level programming language into a low-level language that the computer can execute (our books call this object code)
+It translates a high-level programming language into a low-level language that the computer can execute (sometimes this is called object code)
 
 __What's the difference between compiled and interpreted languages?__
 
@@ -136,7 +136,7 @@ The interactive shell executes code as you enter each line; it give you immediat
 
 The representation of a bare value in code is sometimes called a __literal__.
 
-* "a string " a __string literal__
+* "a string " - a __string literal__
 * 254 - an __integer literal__
 * False - a __bool literal__
 </section>
@@ -153,7 +153,6 @@ A __data type__ is a set of values... or a category of values.
 3. __int__ (integer) - 12
 4. __float__ (floating point) - 12.121212
 5. __complex__ (complex numbers) - 1j * 1j (just know that this exists; it won't be in the exam)
-6. __range__ (an arithmetic sequence of numbers)
 
 </section>
 
@@ -208,9 +207,9 @@ If you don't have matching start and end quotes (__unbalanced quotes__) you'll g
 <section markdown="block">
 ### There Are Three Ways to Quote Strings
 
-1. double quotes - "
-2. single quotes - '
-3. triple double quotes __for multiline strings__ - """
+1. double quotes - &quot;
+2. single quotes - &squot;
+3. triple single or double quotes __for multiline strings__ - """
 
 {% highlight python %}
 "double quoted string"
