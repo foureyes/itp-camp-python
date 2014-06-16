@@ -123,7 +123,7 @@ you got it!
 <aside>It's This Guy...</aside>
 
 <div class="img-container" markdown="block">
-![George Boole](../../../resources/img/boole.jpeg)
+![George Boole](../resources/img/boole.jpeg)
 </div>
 </section>
 

@@ -290,7 +290,7 @@ print('two\nlines\n')
 ###On a Tropical Island
 <aside>A Quick Activity</aside>
 
-![jake](../../../resources/img/jake.jpeg)
+![jake](../resources/img/jake.jpeg)
 </section>
 <section markdown="block">
 ###On a Tropical Island Lyrics

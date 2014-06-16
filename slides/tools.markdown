@@ -9,7 +9,7 @@ title: Tools
 
 <section markdown="block" markdown="block">
 ## We're Going to Be Using...
-<div class="img-container" markdown="block">![Python Logo](../../../resources/img/python-logo-master-v3-TM.png)
+<div class="img-container" markdown="block">![Python Logo](../resources/img/python-logo-master-v3-TM.png)
 </div>
 </section>
 
@@ -57,7 +57,7 @@ QUESTION - does anyone use any of these sites?
 *  invented in 1991 by this bearded Dutch guy (Guido van Rossum):
 
 <div class="img-container" markdown="block">
-![Guido Van Rossum](../../../resources/img/guido.jpg)
+![Guido Van Rossum](../resources/img/guido.jpg)
 </div>
 
 <details open markdown="block">
@@ -107,7 +107,7 @@ A __text file__ is simply a file that contains human readable text.
 * Python programs are text files that (usually) end in __.py__ (for example, hello.py)
 
 <div class="img-container" markdown="block">
-![Python file icon](../../../resources/img/text-x-python-icon.png)
+![Python file icon](../resources/img/text-x-python-icon.png)
 </div>
 </section>
 

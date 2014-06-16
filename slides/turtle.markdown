@@ -47,7 +47,7 @@ So, what's this __Logo__ thing about?
 <section markdown="block">
 ### (And Like Many Great Computer Scientists, He Has a Beard)
 
-<div class="img-container" markdown="block">![Seymour Papert](../../../resources/img/papert.jpg)
+<div class="img-container" markdown="block">![Seymour Papert](../resources/img/papert.jpg)
 </div>
 
 </section>
@@ -57,7 +57,7 @@ So, what's this __Logo__ thing about?
 
 Imagine you have a turtle hanging out on the beach...
 
-<div class="img-container" markdown="block">![Turtle](../../../resources/img/turtle.jpg) 
+<div class="img-container" markdown="block">![Turtle](../resources/img/turtle.jpg) 
 </div>
 </section>
 
@@ -233,7 +233,7 @@ We should probably convert our hello program into a template.  You'll need to wr
 * it's just a variable name; it can be anything you want (same with __wn__, but you have to change wn everywhere you see it)
 * in fact, in my previous programs, I called the turtle leo, in honor of one of these guys
 
-<div class="img-container" markdown="block">![Turtle](../../../resources/img/tmnt.gif) 
+<div class="img-container" markdown="block">![Turtle](../resources/img/tmnt.gif) 
 </div>
 
 </section>
@@ -383,7 +383,7 @@ Let's try it with loops!
 
 __Try drawing two blue pentagons that are 200 pixels apart:. &rarr;__
 
-<div class="img-container" markdown="block">![Pentagons](../../../resources/img/pentagons.png) 
+<div class="img-container" markdown="block">![Pentagons](../resources/img/pentagons.png) 
 </div>
 </section>
 
