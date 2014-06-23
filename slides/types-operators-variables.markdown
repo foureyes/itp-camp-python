@@ -152,7 +152,7 @@ A __data type__ is a set of values... or a category of values.
 2. __bool__ (boolean value) - True
 3. __int__ (integer) - 12
 4. __float__ (floating point) - 12.121212
-5. __complex__ (complex numbers) - 1j * 1j (just know that this exists; it won't be in the exam)
+5. __complex__ (complex numbers) - 1j * 1j 
 
 </section>
 
@@ -431,8 +431,6 @@ __What's an integer?__
 * __integer__ - whole number, can be negative
 * __int__ is the actual name of the integer type
 * 24, -25 &rarr;
-* no size limit (well, as much as your computer can handle)!
-* for example: 1337 ** 20 &rarr;
 </div>
 </section>
 
@@ -467,35 +465,6 @@ Very __large__ or __small__ floating point numbers are expressed in scientific n
 </div>
 </section>
 
-<section markdown="block">
-### Uh-oh - That's Too Much
-<aside>Overflow</aside>
-
-* unlike integers, floats have min and max values... if you have a value that's too big or too small
-* sys.float_info.max &rarr;
-* 5555**55555.0 &rarr;
-
-{% highlight pycon %}
->>> 5555**55555.0
-Traceback (most recent call last):
-  File "<pyshell#93>", line 1, in <module>
-    5555**55555.0
-OverflowError: (34, 'Result too large')
->>> 
-{% endhighlight %}
-
-<!-- _nomd -->
-</section>
-
-<section markdown="block">
-###Complex Numbers
-<aside>Um - Does anyone remember these?  I don't</aside>
-
-For completeness... __Python supports complex numbers__
-
-* numbers with square root of -1 / imaginary numbers
-* 1j * 1j &rarr;
-</section>
 
 <section markdown="block">
 ###Don't, Use, That, Comma
@@ -828,7 +797,6 @@ How do you use (_call_) built-in functions in your code?
 3. within those parentheses, put in the value(s) that you're passing in, separated by commas
 """
 {% endhighlight %}
-</div>
 </section>
 
 <section markdown="block">
@@ -898,6 +866,68 @@ print("Hi ", "there")
 </section>
 
 <section markdown="block">
+### Conversion Functions
+
+For each type that we learned, there's a function with the same name that will create a value of that type.  They __always__ return their _associated type_!
+
+* __int(value)__
+* __str(value)__
+* __float(value)__
+
+{% highlight python %}
+result = int("5")
+{% endhighlight %}
+</section>
+
+<section markdown="block">
+### Type Conversion
+
+You can change from one type to another using __functions__ of the same name as the __type__ you are trying to convert to.  Let's look at what autocomplete says about the following functions and demo them.  &rarr;
+
+* __int__(), __str__(), and __float__()
+* unlike print, these functions __return (give back) a value__ to your program!
+* this is called __type conversion__ or __casting__
+</section>
+
+<section markdown="block">
+###And This Helps... How? 
+__Let's fix some of our previous type errors__ &rarr;
+
+
+{% highlight pycon %}
+3 + " blind mice"
+{% endhighlight %}
+
+(of course, this is contrived, since we know that 3 is an int, and we could have just wrapped it in quotes: '3'... but imagine if we didn't know the type beforehand!)
+
+<div class="incremental" markdown="block">
+
+{% highlight pycon %}
+>>> str(3) + " blind mice"
+'3 blind mice'
+{% endhighlight %}
+</div>
+</section>
+
+
+<section markdown="block">
+### Conversion Functions Continued
+
+* note that __int()__ and __float()__ will only accept int and float _"like"_ values... "5" will be converted (even with spaces), but "five" will cause an error
+* these can be used to avoid errors when using numeric or string operators 
+{% highlight python %}
+num = 99
+print(str(num) + " red balloons")
+{% endhighlight %}
+* remember - you don't have to convert if your value is already the type you're converting to
+{% highlight python %}
+num = "99" # no need to convert
+print(num + " red balloons")
+{% endhighlight %}
+
+</section>
+
+<section markdown="block">
 ### Talkin' the Talk
 
 Using this code as an example:
@@ -962,67 +992,6 @@ The type of the result of calling str(5 + 5), which __turns out to be?__ &rarr;
 </div>
 </section>
 
-<section markdown="block">
-### Conversion Functions
-
-For each type that we learned, there's a function with the same name that will create a value of that type.  They __always__ return their _associated type_!
-
-* __int(value)__
-* __str(value)__
-* __float(value)__
-
-{% highlight python %}
-result = int("5")
-{% endhighlight %}
-</section>
-
-<section markdown="block">
-### Type Conversion
-
-You can change from one type to another using __functions__ of the same name as the __type__ you are trying to convert to.  Let's look at what autocomplete says about the following functions and demo them.  &rarr;
-
-* __int__(), __str__(), and __float__()
-* unlike print, these functions __return (give back) a value__ to your program!
-* this is called __type conversion__ or __casting__
-</section>
-
-<section markdown="block">
-###And This Helps... How? 
-__Let's fix some of our previous type errors__ &rarr;
-
-
-{% highlight pycon %}
-3 + " blind mice"
-{% endhighlight %}
-
-(of course, this is contrived, since we know that 3 is an int, and we could have just wrapped it in quotes: '3'... but imagine if we didn't know the type beforehand!)
-
-<div class="incremental" markdown="block">
-
-{% highlight pycon %}
->>> str(3) + " blind mice"
-'3 blind mice'
-{% endhighlight %}
-</div>
-</section>
-
-
-<section markdown="block">
-### Conversion Functions Continued
-
-* note that __int()__ and __float()__ will only accept int and float _"like"_ values... "5" will be converted (even with spaces), but "five" will cause an error
-* these can be used to avoid errors when using numeric or string operators 
-{% highlight python %}
-num = 99
-print(str(num) + " red balloons")
-{% endhighlight %}
-* remember - you don't have to convert if your value is already the type you're converting to
-{% highlight python %}
-num = "99" # no need to convert
-print(num + " red balloons")
-{% endhighlight %}
-
-</section>
 
 <section markdown="block">
 ### Other Built-In Functions
